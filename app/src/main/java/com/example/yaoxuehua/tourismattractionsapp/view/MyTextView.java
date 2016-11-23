@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 /**
  * Created by yaoxuehua on 16-11-18.
+ * 该控件方便于是图片与文字可以共存，间距等可控
  */
 
 public class MyTextView extends TextView {
