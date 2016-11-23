@@ -19,6 +19,7 @@ public abstract class BaseActivity extends FragmentActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        getSetContentViewBefore();
         setContentView(getLayoutResId());
         initView();
         initExtraBundle();
@@ -77,6 +78,12 @@ public abstract class BaseActivity extends FragmentActivity{
         config.setToDefaults();
         res.updateConfiguration(config, res.getDisplayMetrics());
         return res;
+    }
+    /**
+     * 实现setContentView方法之前需要调用
+     * */
+    public void getSetContentViewBefore(){
+
     }
 
 }
