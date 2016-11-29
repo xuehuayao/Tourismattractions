@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -13,32 +13,18 @@
 
     <android.support.v4.view.ViewPager
         android:id="@+id/Main_viewPager"
-        android:layout_width="100dp"
-        android:layout_height="100dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar"
+        android:layout_above="@+id/bottom_barID"
+        >
 
 
     </android.support.v4.view.ViewPager>
-
-    <LinearLayout
-        android:id="@+id/viewGroup"
+    <include layout="@layout/bottom_bar"
+        android:id="@+id/bottom_barID"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="vertical"
-        android:background="#ffffff"
-        >
+        android:layout_height="@dimen/home_bottombar_height"
+        android:layout_alignParentBottom="true" />
 
-        <com.baidu.mapapi.map.MapView
-            android:id="@+id/myMap"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:clickable="true"
-            >
-
-
-        </com.baidu.mapapi.map.MapView>
-
-
-    </LinearLayout>
-
-
-</LinearLayout>
+</RelativeLayout>

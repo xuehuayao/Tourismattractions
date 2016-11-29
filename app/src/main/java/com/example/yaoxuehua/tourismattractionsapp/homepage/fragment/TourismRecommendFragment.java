@@ -4,12 +4,13 @@ import android.os.Bundle;
 
 import com.example.yaoxuehua.tourismattractionsapp.R;
 import com.example.yaoxuehua.tourismattractionsapp.parent.activity.BaseActivity;
+import com.example.yaoxuehua.tourismattractionsapp.parent.fragment.BaseFragment;
 
 /**
  * Created by yaoxuehua on 16-11-15.
  */
 
-public class TourismRecommendFragment extends BaseActivity{
+public class TourismRecommendFragment extends BaseFragment{
     @Override
     protected int getLayoutResId() {
         return R.layout.tourism_recommend_fragment;
@@ -21,7 +22,8 @@ public class TourismRecommendFragment extends BaseActivity{
     }
 
     @Override
-    protected void initData(Bundle savedInstanceState) {
+    protected void initData() {
 
     }
+
 }

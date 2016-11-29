@@ -3,10 +3,14 @@
     <string name="register_title">旅游注册</string>>
     <string name="registration">注册</string>
 
+    <!--bottombar-->
+    <string name="tourism_control">旅游计划</string>
+    <string name="map_search">地图查询</string>
+    <string name="person">个人中心</string>
+
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="refresh">刷新</string>
-    <string name="person">个人中心</string>
     <string name="sliding_title">SlidingMenu Demo</string>
     <string name="desc_list_item_icon">SlidingMenu</string>
     <string name="title_activity_list_view">ListVIewActivity</string>
@@ -189,15 +193,6 @@
     <string name="Please_fill_the_whole_Double_top_diameter_or_The_femur_length">请补全双顶径/股骨长数据</string>
     <string name="Please_fill_the_whole_Gestational_sac">请补全妊娠囊数据</string>
     <string name="Please_fill_the_whole_Head_arm_length">请补全头臀长数据</string>
-    192
-    193
-    194
-    195
-    196
-    197
-    198
-    199
-    200
 
     <string name="b_ultrasonic_time">B超时间&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;%1$s</string>
     <string name="head_arm_length">头臀长：%1$smm</string>
