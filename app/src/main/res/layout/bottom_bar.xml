@@ -14,7 +14,7 @@
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/designer_main_radio_btn"
+            android:id="@+id/tourism_main_radio_btn"
             style="@style/main_tab_bottom"
             android:layout_marginTop="@dimen/size_6"
             android:checked="true"
@@ -22,9 +22,9 @@
             android:text="@string/tourism_control"
             android:textSize="@dimen/size_12"/>
 
-        <!--设计师-->
+        <!--个人中心-->
         <RadioButton
-            android:id="@+id/radio_btn_designer"
+            android:id="@+id/personal_radio_btn_"
             style="@style/main_tab_bottom"
             android:layout_marginTop="@dimen/size_6"
             android:checked="false"
@@ -35,7 +35,7 @@
 
 
         <RadioButton
-            android:id="@+id/designer_person_center_radio_btn"
+            android:id="@+id/map_radio_btn"
             style="@style/main_tab_bottom"
             android:layout_marginTop="@dimen/size_6"
             android:checked="false"
