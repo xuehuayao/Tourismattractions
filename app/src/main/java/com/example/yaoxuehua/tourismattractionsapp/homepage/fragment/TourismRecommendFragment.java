@@ -25,20 +25,19 @@ import java.util.TimerTask;
  * Created by yaoxuehua on 16-11-15.
  */
 
-public class TourismRecommendFragment extends BaseFragment implements View.OnClickListener{
+public class TourismRecommendFragment extends BaseFragment implements View.OnClickListener {
 
 
-    private ImageView switchPictureOne;
     private ImageView switchPictureTwo;
 
-    private ImageView currentReadyImageView;
     private Timer timer;
     private Handler handler;
     //图片数组
-    private int[] imageViewPicture = new int[]{R.mipmap.one,R.mipmap.two,R.mipmap.three,R.mipmap.four,R.mipmap.five,R.mipmap.six,R.mipmap.seven,R.mipmap.eight
-    ,R.mipmap.nine,R.mipmap.ten,R.mipmap.eleven,R.mipmap.twelve,R.mipmap.thirteen,R.mipmap.fourteen,R.mipmap.fiveteen,R.mipmap.sixteen,R.mipmap.seventeen,R.mipmap.eighteen
-    ,R.mipmap.nineteen,R.mipmap.twenty,R.mipmap.twentyone,R.mipmap.twentytwo,R.mipmap.twentythree};
+    private int[] imageViewPicture = new int[]{R.mipmap.one, R.mipmap.two, R.mipmap.three, R.mipmap.four, R.mipmap.five, R.mipmap.six, R.mipmap.seven, R.mipmap.eight
+            , R.mipmap.nine, R.mipmap.ten, R.mipmap.eleven, R.mipmap.twelve, R.mipmap.thirteen, R.mipmap.fourteen, R.mipmap.fiveteen, R.mipmap.sixteen, R.mipmap.seventeen, R.mipmap.eighteen
+            , R.mipmap.nineteen, R.mipmap.twenty, R.mipmap.twentyone, R.mipmap.twentytwo, R.mipmap.twentythree};
     private int arrLocation = 0;//图片数组位置
+
     @Override
     public void onClick(View v) {
 
@@ -52,11 +51,8 @@ public class TourismRecommendFragment extends BaseFragment implements View.OnCli
     @Override
     protected void initView() {
 
-        switchPictureOne = (ImageView) rootView.findViewById(R.id.switch_picture_one);
         switchPictureTwo = (ImageView) rootView.findViewById(R.id.switch_picture_two);
         switchPictureTwo.setBackgroundResource(R.mipmap.one);
-        switchPictureOne.setBackgroundResource(R.mipmap.two);
-        currentReadyImageView = switchPictureTwo;
 
     }
 
@@ -72,13 +68,13 @@ public class TourismRecommendFragment extends BaseFragment implements View.OnCli
 
                     case 0:
 
-                        if (arrLocation < 22){
+                        if (arrLocation < 22) {
 
                             arrLocation++;
-                        }else {
+                        } else {
                             arrLocation = 0;
                         }
-                        switchAnamition(switchPictureTwo,imageViewPicture[arrLocation]);
+                        switchAnamition(switchPictureTwo, imageViewPicture[arrLocation]);
 
                         break;
                 }
@@ -89,9 +85,8 @@ public class TourismRecommendFragment extends BaseFragment implements View.OnCli
 
     /**
      * 切换动画时间。连续性
-     * */
-    public void controlAnimation(){
-
+     */
+    public void controlAnimation() {
 
         final TimerTask timerTask = new TimerTask() {
             @Override
@@ -100,11 +95,9 @@ public class TourismRecommendFragment extends BaseFragment implements View.OnCli
                 Message message = handler.obtainMessage();
                 message.what = 0;
                 handler.sendMessage(message);
-
             }
         };
         if (timer == null) {
-
             timer = new Timer();
             timer.schedule(timerTask, 10000, 13000);
         }
@@ -112,10 +105,10 @@ public class TourismRecommendFragment extends BaseFragment implements View.OnCli
 
     /**
      * 切换动画
-     * */
-    public void switchAnamition(final ImageView view,int picture){
+     */
+    public void switchAnamition(final ImageView view, int picture) {
 
-        AnimationUtils.setAnimations(view,picture);
+        AnimationUtils.setAnimations(view, picture);
     }
 
 }

@@ -24,5 +24,11 @@
         <item name="android:singleLine">true</item>
         <item name="android:layout_weight">1</item>
     </style>
+    
+    <!--<style name="MyCirclMenu">-->
+        <!--<item name=""-->
+        <!---->
+        <!---->
+    <!--</style>-->
 
 </resources>

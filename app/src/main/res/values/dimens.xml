@@ -334,5 +334,8 @@
 
     <!--Calendar view-->
     <dimen name="month_view_height">240dp</dimen>
+<!--圆形控件部分赋值-->
+    <dimen name="circleMenu_child_radius">3dp</dimen>
+    <dimen name="circleMenu_big_radius">8dp</dimen>
 
 </resources>

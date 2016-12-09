@@ -5,7 +5,6 @@ import android.support.v4.app.Fragment;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
-
 import com.baidu.mapapi.SDKInitializer;
 import com.baidu.mapapi.map.TextureMapView;
 import com.example.yaoxuehua.tourismattractionsapp.R;
@@ -15,7 +14,6 @@ import com.example.yaoxuehua.tourismattractionsapp.homepage.fragment.PersonalCen
 import com.example.yaoxuehua.tourismattractionsapp.homepage.fragment.TourismRecommendFragment;
 import com.example.yaoxuehua.tourismattractionsapp.parent.activity.BaseTopBarActivity;
 import com.example.yaoxuehua.tourismattractionsapp.view.NoScrollViewPager;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -75,6 +73,7 @@ public class MainActivity extends BaseTopBarActivity implements View.OnClickList
         personalBtn = (RadioButton) findViewById(R.id.personal_radio_btn_);
         mapBtn = (RadioButton) findViewById(R.id.map_radio_btn);
         setFragmentList();
+
     }
 
     @Override
