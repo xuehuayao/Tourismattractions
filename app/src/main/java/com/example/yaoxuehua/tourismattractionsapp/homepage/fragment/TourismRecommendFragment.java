@@ -11,12 +11,14 @@ import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.yaoxuehua.tourismattractionsapp.R;
 import com.example.yaoxuehua.tourismattractionsapp.parent.activity.BaseActivity;
 import com.example.yaoxuehua.tourismattractionsapp.parent.fragment.BaseFragment;
 import com.example.yaoxuehua.tourismattractionsapp.utils.AnimationUtils;
 import com.example.yaoxuehua.tourismattractionsapp.utils.RadomCountUtils;
+import com.example.yaoxuehua.tourismattractionsapp.view.MyCircleMenu;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -32,6 +34,7 @@ public class TourismRecommendFragment extends BaseFragment implements View.OnCli
 
     private Timer timer;
     private Handler handler;
+    private MyCircleMenu circle_menu;
     //图片数组
     private int[] imageViewPicture = new int[]{R.mipmap.one, R.mipmap.two, R.mipmap.three, R.mipmap.four, R.mipmap.five, R.mipmap.six, R.mipmap.seven, R.mipmap.eight
             , R.mipmap.nine, R.mipmap.ten, R.mipmap.eleven, R.mipmap.twelve, R.mipmap.thirteen, R.mipmap.fourteen, R.mipmap.fiveteen, R.mipmap.sixteen, R.mipmap.seventeen, R.mipmap.eighteen
@@ -52,6 +55,7 @@ public class TourismRecommendFragment extends BaseFragment implements View.OnCli
     protected void initView() {
 
         switchPictureTwo = (ImageView) rootView.findViewById(R.id.switch_picture_two);
+        circle_menu = (MyCircleMenu) rootView.findViewById(R.id.circle_menu);
         switchPictureTwo.setBackgroundResource(R.mipmap.one);
 
     }
@@ -81,6 +85,14 @@ public class TourismRecommendFragment extends BaseFragment implements View.OnCli
             }
         };
         controlAnimation();
+
+        circle_menu.setListener(new MyCircleMenu.CircleMenuListener() {
+            @Override
+            public void circleMenuButtonListener(MyCircleMenu.StatusSave statusSave) {
+                Toast.makeText(getActivity(),statusSave.getWatchCount()+"",Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     /**

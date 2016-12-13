@@ -20,6 +20,7 @@
         />
 
     <com.example.yaoxuehua.tourismattractionsapp.view.MyCircleMenu
+        android:id="@+id/circle_menu"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_centerInParent="true"
