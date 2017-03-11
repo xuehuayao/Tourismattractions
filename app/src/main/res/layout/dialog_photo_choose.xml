@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bt_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/size_12"
+        android:paddingTop="@dimen/size_5"
+        android:text="@string/take_picture"
+        android:textColor="@color/toptab_text_selectedcolor"
+        android:textSize="@dimen/size_16" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.5"
+        android:background="@color/province_line_border" />
+
+    <Button
+        android:id="@+id/bt_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/size_12"
+        android:paddingTop="@dimen/size_12"
+        android:text="@string/photo"
+        android:textColor="@color/toptab_text_selectedcolor"
+        android:textSize="@dimen/size_16" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.5"
+        android:background="@color/province_line_border" />
+
+    <Button
+        android:id="@+id/bt_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/size_12"
+        android:paddingTop="@dimen/size_12"
+        android:text="@string/cancel"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/size_16" />
+
+</LinearLayout>

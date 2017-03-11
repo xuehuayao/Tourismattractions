@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_CF5F5F5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_30"
+        android:orientation="horizontal">
+
+        <com.tangguotravellive.ui.view.WheelView.WheelView
+            android:id="@+id/id_reg_province"
+            android:layout_width="@dimen/size_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.tangguotravellive.ui.view.WheelView.WheelView
+            android:id="@+id/id_reg_city"
+            android:layout_width="@dimen/size_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.tangguotravellive.ui.view.WheelView.WheelView
+            android:id="@+id/id_reg_district"
+            android:layout_width="@dimen/size_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_reg_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"
+        android:background="@color/color_EC651B"
+        android:padding="@dimen/size_10"
+        android:text="@string/save"
+        android:textColor="@color/white" />
+
+</LinearLayout>
